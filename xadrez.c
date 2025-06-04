@@ -10,7 +10,7 @@ int main(){
     printf("Digite a Inicial do Estado: \n");
     scanf("%s", &Estado);
    
-    printf("Digite o Codigo: \n");
+    printf("Digite o Código: \n");
     scanf("%s", &Codigo_da_Carta);
    
     printf("Digite o Nome da Cidade: \n");
@@ -32,7 +32,7 @@ int main(){
     printf("Digite a Inicial do Estado: \n");
     scanf("%s", &Estado);
    
-    printf("Digite o Codigo: \n");
+    printf("Digite o Código: \n");
     scanf("%s", &Codigo_da_Carta);
    
     printf("Digite o Nome da Cidade: \n");
