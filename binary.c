@@ -17,17 +17,21 @@ printf("N. Menor\n");
 printf("I. Igual\n");
 
 printf("Escolha a comparação: ");
-scanf(" %c", &numeroJogador);
+scanf(" %c", &tipoComparacao);
+
+printf("Digite seu numero (entre 1 e 100):\n");
+scanf("%d", &numeroJogador);
 
 // exibir numero do computador
-printf("O número do computador é: %d\n", numeroComputador);
-scanf("%c", &numeroComputador);
+//printf("O número do computador é: %d\n", numeroComputador);
+scanf("%d", &numeroComputador);
 
 switch(tipoComparacao){
     case 'M':
     case 'm':
         printf("Você escolheu a opção maior!\n");
         resultado = numeroJogador > numeroComputador ? 1 : 0;
+        printf("O número do computador é: %d e o número do jogador é: %d\n", numeroComputador, numeroJogador);
         break;
 
     case 'N':
@@ -41,16 +45,17 @@ switch(tipoComparacao){
         printf("Você escolheu a opção igual!\n");
         resultado = numeroJogador == numeroComputador ? 1 : 0;
         break;
-
     
     default:
-    printf("Opção de jogo inválida. \n");
-    break;
+        printf("Opção de jogo inválida. \n");
+        break;
 
 if (resultado == 1)
-    {printf("Parabéns, você venceu! \n");
-    } else
- {printf("Infelizmente, você perdeu!\n");}
+{
+    printf("Parabéns, você venceu!\n");
+} else {
+    printf("Infelizmente, você perdeu!\n");
+}
 
 
 
