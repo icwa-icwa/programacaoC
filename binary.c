@@ -24,14 +24,14 @@ scanf("%d", &numeroJogador);
 
 // exibir numero do computador
 //printf("O número do computador é: %d\n", numeroComputador);
-scanf("%d", &numeroComputador);
+//scanf("%d", &numeroComputador);
 
 switch(tipoComparacao){
     case 'M':
     case 'm':
         printf("Você escolheu a opção maior!\n");
         resultado = numeroJogador > numeroComputador ? 1 : 0;
-        printf("O número do computador é: %d e o número do jogador é: %d\n", numeroComputador, numeroJogador);
+
         break;
 
     case 'N':
@@ -49,6 +49,8 @@ switch(tipoComparacao){
     default:
         printf("Opção de jogo inválida. \n");
         break;
+}
+printf("O número do computador é: %d e o número do jogador é: %d\n", numeroComputador, numeroJogador);
 
 if (resultado == 1)
 {
@@ -59,7 +61,6 @@ if (resultado == 1)
 
 
 
-}
 
 
 return 0;
