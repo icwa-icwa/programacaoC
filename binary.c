@@ -16,7 +16,7 @@ printf("M. Maior\n");
 printf("N. Menor\n");
 printf("I. Igual\n");
 
-printf("Escolha a comparação: ");
+printf("Escolha a comparação: \n");
 scanf(" %c", &tipoComparacao);
 
 printf("Digite seu numero (entre 1 e 100):\n");
