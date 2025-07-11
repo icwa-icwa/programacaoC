@@ -1,13 +1,18 @@
 #include <stdio.h>
 int main(){
-    for (int i = 1; i<=10; i++) {
-            for (int j = 1; j<=10; j++) {
-                printf ("A tabuada de %d", j);
-                printf("%d\t", i*j);
-            }
-            printf("\n");
+    int i = 0;
+while (i<=10){
+    
+    if (i % 2 == 0){
+    
+    printf("O número %d é par!\n", i);
     }
+    else
+    { 
+        printf("O número %d é impar!\n", i);
+    }    
 
-    return 0;
-
+i++;
+}
+return 0;
 }
