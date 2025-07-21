@@ -59,7 +59,7 @@ int main () {
 
    for(int i = 0; i < LINHAS; i++){
     for(int j = 0; j < COLUNAS; j++){
-        soma = i+j;
+        soma++;
         matriz[i][j] = soma;
         printf(" %-4d ", matriz[i][j]);// para controlar o tamanho das colunas
     }
