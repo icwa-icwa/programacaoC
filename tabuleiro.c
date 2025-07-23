@@ -18,21 +18,30 @@ int main(){
         }
         printf("\n");
     }
+    printf("\n");
+    printf("    *** Nível Novato***\n");
     // Navio_1 com 3 células na vertical atribuídas com o 3.
+    int navio1[3][1] = {{3}, {3}, {3}}; // representa o navio ocupando 3 linhas e 1 coluna
     for(int i = 4; i < 7; i++){// posiciona o navio na linha
         for(int j = 3; j < 4; j++){// posiciona o navio na coluna
             tabuleiro[i][j] = 3;
+            printf("navio1[%d] [%d]\n", i, j); // Exibir a posição do navio
+
         }
     }
      // Navio_2 com 3 células na horizontal atribuídas com o 3.
+     int navio2[1][3] = {{3, 3, 3}}; // representa o navio ocupando 3 colunas e 1 linha
+
     for(int i = 7; i < 8; i++){// posiciona o navio na linha
         for(int j = 6; j < 9; j++){// posiciona o navio na coluna
             tabuleiro[i][j] = 3;
+            printf("navio2[%d] [%d]\n", i, j); // Exibir a posição do navio
+
         }
     }
     printf("\n");
     // atualiza o tabuleiro 
-    printf("    *** Nível Novato***\n");
+    
     printf("       Tabuleiro com Navios\n");
     printf("   "); // espaço para iniciar o cabeçalho das colunas
     for(int i = 0; i < 10; i++){
