@@ -84,6 +84,7 @@ int main(){
         }
         printf("\n");
     }
+    printf("\n");
     printf("Verifica sobreposição nível Aventureiro...\n");
     
      // Verifica se os navios se sobrepõem de forma simplificada.
