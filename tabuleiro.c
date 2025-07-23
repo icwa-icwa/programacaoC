@@ -84,7 +84,6 @@ int main(){
         }
         printf("\n");
     }
-    printf("\n");
     printf("Verifica sobreposição nível Aventureiro...\n");
     
      // Verifica se os navios se sobrepõem de forma simplificada.
@@ -105,8 +104,65 @@ int main(){
     } else {
         printf("Os navios se sobrepõem.\n");
     }
+    // limpa o tabuleiro antes das figuras geométricas
+    for (int i = 0; i < 10; i++){
+        for(int j = 0; j < 10; j++){
+            tabuleiro[i][j] = 0;
+        }
+    }
+    // cone com atribuição de 5 
+    for (int i = 0; i < 10; i++){
+        for(int j = 0; j < 10; j++){
+            if(i == 0 && j == 5){// topo do cone
+            tabuleiro[i][j] = 5;
+        } else if(i == 1 && j >= 4 && j <= 6) {// meio do cone
+            tabuleiro[i][j] = 5;
+        } else if(i == 2 && j >=3 && j <= 7) {//base do cone
+            tabuleiro[i][j] = 5;
+        }
+    }
+    }
+    // cruz com atribuição de 1
+    for (int i = 0; i < 10; i++){
+        for(int j = 0; j < 10; j++){
+            if(i == 5 && j == 2){//topo da cruz
+                tabuleiro[i][j] = 1;
+            } else if(i == 6 && j >= 0 && j <=4){//meio da cruz
+                tabuleiro[i][j] = 1;
+            } else if(i == 7 && j == 2){// base da cruz
+                tabuleiro[i][j] = 1;
+            }
+        }
+    }
+    // octaedro com atribuição de 4
+    for (int i = 0; i < 10; i++){
+        for(int j = 0; j < 10; j++){
+            if( i == 7 && j == 8){//topo do octaedro
+                tabuleiro[i][j] = 4;
+            } else if(i == 8 && j >=7 && j <= 9){//meio do octaedro
+                tabuleiro[i][j] = 4;
+            } else if(i == 9 && j == 8){//base do octaedro
+                tabuleiro[i][j] = 4;
+            }
+        }
+    }
 
-    
+  printf("\n");
+    // atualiza o tabuleiro 
+    printf("    *** Nível Mestre ***\n");
+    printf("       Tabuleiro com Figuras\n");
+    printf("   "); // espaço para iniciar o cabeçalho das colunas
+    for(int i = 0; i < 10; i++){
+        printf("%-3c",coluna[i]);
+    }
+    printf("\n");
+    for(int i = 0; i < 10; i++){
+        printf("%-3s", linha[i]);
+        for(int j = 0; j < 10; j++){
+            printf("%-3d", tabuleiro[i][j]);
+        }
+        printf("\n");
+    }
     printf("\n");
     return 0;
 }
