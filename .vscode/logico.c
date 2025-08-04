@@ -112,6 +112,7 @@ float saldo = 1000;
     printf("Sábado\n");
    }*/
    // pode ser feito com o switch
+int nota1, nota2;
 
 
     return 0;
