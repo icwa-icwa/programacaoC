@@ -112,7 +112,33 @@ float saldo = 1000;
     printf("Sábado\n");
    }*/
    // pode ser feito com o switch
-int nota1, nota2;
+float nota1, nota2;
+int opcao;
+switch(opcao)
+{
+    case 1:
+    printf("Calcular a média\n");
+    printf("Digite a primeira nota:\n");
+    scanf("%f",&nota1);
+    printf("Digite a segunda nota:\n");
+    scanf("%f", &nota2);
+    // testar a conidição se a nta é >= 0 e <= 10
+    if ((nota1>=0 && nota1<=10) && (nota2>=0 && nota2<=10)){
+        printf("Entrada correta.\n");
+    }else{
+        printf("Entrada com valores errados.\n");
+    }
+    break;
+    case 2:
+    printf("Determinar status\n");
+    break;
+    case 3:
+    printf("Saindo do programa...\n");
+    break;
+    default:
+    printf("Opção inválida\n");
+    break;
+}
 
 
     return 0;
