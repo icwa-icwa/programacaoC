@@ -159,7 +159,22 @@ switch(opcao)
 
     idade > 18 ? printf("Você é maior de idade\n") : printf("Você é menor de idad
 
-    printf("\n");
+int temperatura = 32;
+int resultado;
+
+resultado = temperatura > 30 ? 1 : 0;
+
+if(resultado == 1){
+    printf("Está calor!\n");
+} else {
+    printf("Está frio!\n");
+}
+int num1 = 40, num2 = 60;
+int maior;
+num1 > num2 ? (maior = num1) : (maior = num2);
+printf("0 número maior é: %d\n", maior);
+*/    
+printf("\n");
 
     return 0;
 
