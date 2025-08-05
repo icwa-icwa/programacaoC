@@ -161,7 +161,12 @@ switch(opcao)
   */
 int temperatura = 32;
 int resultado;
-temperatura > 30 ? printf("Está calor!\n") : printf("Está frio!\n");
+resultado = temperatura > 30 ? 1 : 0;
+if(temperatura == 1){
+    printf("Está calor!\n");
+}else{
+    printf("Está frio!\n");
+}
 
 
     printf("\n");
