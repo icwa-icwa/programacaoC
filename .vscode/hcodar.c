@@ -44,7 +44,7 @@ int main(){
             printf("Opção de jogo inválida\n");
         break;
     }
-    printf("O número do Computador é: %d e o número do Jogador é: %d", numeroComputador, numeroJogador);
+    printf("O número do Computador é: %d e o número do Jogador é: %d\n", numeroComputador, numeroJogador);
     if (resultado == 1)
     {
         printf("Você venceu!\n");
