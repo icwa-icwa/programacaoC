@@ -21,8 +21,6 @@ int main(){
     printf("Digite seu número (entre 1 e 100): ");
     scanf("%d", &numeroJogador);
 
-    printf("O número do Computador é: %d", numeroComputador);
-
     switch(tipoComparacao)
     {
         case 'M':
