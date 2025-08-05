@@ -153,13 +153,17 @@ switch(opcao)
     case 3:
     printf("Saindo do programa...\n");
     break;
-    default:
-    printf("Opção inválida\n");
-    break;*/
+    default     
     int idade = 16;
     int resultado;
 
     idade > 18 ? printf("Você é maior de idade\n") : printf("Você é menor de idade.\n");
+  */
+int temperatura = 32;
+int resultado;
+temperatura > 30 ? printf("Está calor!\n") : printf("Está frio!\n");
+
+
     printf("\n");
 
     return 0;
