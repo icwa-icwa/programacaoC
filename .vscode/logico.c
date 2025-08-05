@@ -110,7 +110,7 @@ float saldo = 1000;
     printf("Sexta-feria\n");
    }else if(dia == 7){
     printf("Sábado\n");
-   }*/
+   }
    // pode ser feito com o switch
 float nota1, nota2, media;
 int opcao;  
@@ -155,8 +155,11 @@ switch(opcao)
     break;
     default:
     printf("Opção inválida\n");
-    break;
-}
+    break;*/
+    int idade = 16;
+    int resultado;
+
+    idade > 18 ? printf("Você é maior de idade\n") : printf("Você é menor de idade.\n");
     printf("\n");
 
     return 0;
